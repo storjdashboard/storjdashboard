@@ -1,4 +1,6 @@
-### Hi there 👋
+Storj Dashboard
+
+Coming soon
 
 <!--
 **storjdashboard/storjdashboard** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
