@@ -1,4 +1,4 @@
-Storj Dashboard
+<h1>Storj Dashboard</h1>
 
 Coming soon
 
