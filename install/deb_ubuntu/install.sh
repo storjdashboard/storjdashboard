@@ -1,6 +1,7 @@
 #!/bin/bash
 clear
-#sudo mkdir -p /storjdashboard && cd /storjdashboard && curl -s https://storjdashboard.com/install/installer.sh -o installer.sh && bash installer.sh
+# To start the script use 
+# sudo mkdir -p /storjdashboard && cd /storjdashboard && curl -s https://storjdashboard.com/install/installer.sh -o installer.sh && bash installer.sh
 
 cd /
 #log file date filename
@@ -106,7 +107,7 @@ wget -O "/var/www/$hostname_ip/daily.php" https://raw.githubusercontent.com/stor
 #3 pay
 wget -O "/var/www/$hostname_ip/pay.php" https://raw.githubusercontent.com/storjdashboard/storjdashboard/main/public/pay.php >> /storjdashboard_logs/git/$log_filename
 #4 audit
-wget -O "/var/www/$hostname_ip/pay.php" https://raw.githubusercontent.com/storjdashboard/storjdashboard/main/public/audit.php >> /storjdashboard_logs/git/$log_filename
+wget -O "/var/www/$hostname_ip/audit.php" https://raw.githubusercontent.com/storjdashboard/storjdashboard/main/public/audit.php >> /storjdashboard_logs/git/$log_filename
 
 #5 config
 config_file="/var/www/$hostname_ip/config.php"
