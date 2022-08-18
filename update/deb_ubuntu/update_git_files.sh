@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-#sudo mkdir -p /storjdashboard && cd /storjdashboard && curl -s https://storjdashboard.com/install/update_git_files.sh -o update_git_files.sh && bash update_git_files.sh
+#sudo mkdir -p /storjdashboard && cd /storjdashboard && curl -s https://raw.githubusercontent.com/storjdashboard/storjdashboard/main/update/deb_ubuntu/update_git_files.sh -o update_git_files.sh && bash update_git_files.sh
 log_filename="log_"$(date +'%Y-%m-%d_%H-%M')".log"
 echo '------------------------------'
 echo "Updating storjDashboard GIT files"
