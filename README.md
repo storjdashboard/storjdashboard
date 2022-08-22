@@ -1,6 +1,15 @@
 <h1>Storj Dashboard</h1>
+<p>A Dashboard for the analyst or just want to know more about your node<br>
+  its <strong>free</strong>, so why not.
+</p>
+<h3>Main Website</h3>
+<p><a href="https://www.storjdashboard.com">www.storjdashboard.com</a></p>
+<h3>Documentation</h3>
+<p><a href="https://docs.storjdashboard.com">docs.storjdashboard.com</a></p>
+<p>&nbsp;</p>
+<h3>Working on Ubuntu + Windows</h3>
+<p>We've made guidance in the documentation for installation on Windows 7+ and Ubuntu 20.04+</p>
 
-Coming soon
 
 <!--
 **storjdashboard/storjdashboard** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
