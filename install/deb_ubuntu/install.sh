@@ -112,7 +112,7 @@ wget -O "/var/www/$hostname_ip/audit.php" https://raw.githubusercontent.com/stor
 #5 config
 config_file="/var/www/$hostname_ip/config.php"
 > $config_file
-echo '<?php $ip="'$storj_dashboard_ip_port'"; ?>' >> $config_file
+echo '<?php $ip="'$storj_dashboard_ip_port'"; $auth="CODE";?>' >> $config_file
 
 
 echo '------- TEST YOUR SERVER -------'
