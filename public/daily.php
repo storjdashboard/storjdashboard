@@ -1,4 +1,5 @@
 <?php 
+ini_set('display_errors', 0);
 include("config.php");
 if (!function_exists('getallheaders')) {
     function getallheaders() {
