@@ -9,7 +9,8 @@
 <p>We've made guidance in the documentation for installation on Windows 7+ and Ubuntu 20.04+</p>
 <p>&nbsp;</p>
 <h3>Linux Updater</h3>
-<pre><code>sudo su &amp;&amp; sudo mkdir -p /storjdashboard &amp;&amp; cd /storjdashboard &amp;&amp; curl -s https://raw.githubusercontent.com/storjdashboard/storjdashboard/main/update/deb_ubuntu/update_git_files.sh -o update_git_files.sh &amp;&amp; bash update_git_files.sh
+<pre><code>sudo su</code>
+<code>sudo mkdir -p /storjdashboard &amp;&amp; cd /storjdashboard &amp;&amp; curl -s https://raw.githubusercontent.com/storjdashboard/storjdashboard/main/update/deb_ubuntu/update_git_files.sh -o update_git_files.sh &amp;&amp; bash update_git_files.sh
 </code></pre>
 <p>&nbsp;</p>
 
