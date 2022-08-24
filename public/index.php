@@ -13,13 +13,15 @@ if (!function_exists('getallheaders')) {
     }
 }
 $headers = getallheaders();
+if(isset($headers['Dash-Auth'])){
 if($headers['Dash-Auth']==$auth){
 header('Content-Type: application/json; charset=utf-8');
 $content = file_get_contents("http://$ip/api/sno/"); 
 $array = json_decode($content, true);$replacements = array("wallet" => "BLANK", "nodeID" => "BLANK");$array = array_replace($array, $replacements);$array = json_encode($array);
 echo $array;
-
+}
 	}else{
+if(isset($headers['Dash-Submitted'])){	
 		if($headers['Dash-Submitted']!=1){
 		header('Content-Type: application/json; charset=utf-8');			
 echo "Unauthorized
@@ -28,4 +30,5 @@ echo "Unauthorized
 		header('HTTP/1.1 401 Unauthorized', true, 401);exit;
 		}
 	}
+}
 ?>
