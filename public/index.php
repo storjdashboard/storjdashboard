@@ -21,8 +21,8 @@ $array = json_decode($content, true);$replacements = array("wallet" => "BLANK", 
 echo $array;
 }
 	}else{
-if(isset($headers['Dash-Submitted'])){	
-		if($headers['Dash-Submitted']!=1){
+
+		if(isset($headers['Dash-Submitted']) && $headers['Dash-Submitted']!=1){
 		header('Content-Type: application/json; charset=utf-8');			
 echo "Unauthorized
 =".$headers['Dash-Auth'];exit;
@@ -30,5 +30,5 @@ echo "Unauthorized
 		header('HTTP/1.1 401 Unauthorized', true, 401);exit;
 		}
 	}
-}
+
 ?>
