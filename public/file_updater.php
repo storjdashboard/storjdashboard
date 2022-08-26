@@ -10,7 +10,7 @@ $p_max = count($page);
 do{ // do start
   
     // Initialize a file URL to the variable
-	$ThisPage = $page[$p'];
+	$ThisPage = $page[$p];
     $url = "https://raw.githubusercontent.com/storjdashboard/storjdashboard/main/public/$ThisPage";
       
     // Use basename() function to return the base name of file
