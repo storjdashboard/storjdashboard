@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors', 1);
   // get list
 $list  = file_get_contents("https://raw.githubusercontent.com/storjdashboard/storjdashboard/main/public/file_updater.list");
 $page = explode("|", $list);
