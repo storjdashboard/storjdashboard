@@ -25,6 +25,10 @@ chmod 0766 /var/www/$hostname_ip/pay.php
 #4 audit
 wget -O "/var/www/$hostname_ip/audit.php" https://raw.githubusercontent.com/storjdashboard/storjdashboard/main/public/audit.php >> /storjdashboard_logs/git/$log_filename
 chmod 0766 /var/www/$hostname_ip/audit.php
+#5 file updater
+wget -O "/var/www/$hostname_ip/file_updater.php" https://raw.githubusercontent.com/storjdashboard/storjdashboard/main/public/file_updater.php >> /storjdashboard_logs/git/$log_filename
+
+
 
 echo '-------------------------------'
 echo '-----  UPDATE COMPLETED  ------'
