@@ -22,11 +22,11 @@ do{ // do start
     // save the file by using base name
     if (file_put_contents($file_name, file_get_contents($url)))
     {
-        echo "$ThisPage | File downloaded successfully<br>";
+        echo "$ThisPage | successful<br>";
     }
     else
     {
-        echo "$ThisPage | File downloading failed.<br>";
+        echo "$ThisPage | failed.<br>";
     }
 	
 	$p = $p+1;
