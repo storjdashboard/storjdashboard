@@ -1,8 +1,9 @@
 <?php
-ini_set('display_errors', 1);
+	ini_set('display_errors', 1);
   // get list
-$list  = file_get_contents("https://raw.githubusercontent.com/storjdashboard/storjdashboard/main/public/file_updater.list");
-$page = explode("|", $list);
+$list = file_get_contents("https://raw.githubusercontent.com/storjdashboard/storjdashboard/main/public/file_updater.list");
+$list  = preg_replace( "/<br>|\n/", "", $list );
+$page = array_filter(explode("|", $list));
 
 $p = 0;
 $p_max = count($page);
