@@ -1,6 +1,16 @@
 <?php 
 ini_set('display_errors', 0);
-include("config.php");
+if (file_exists("config.php")) {
+    include("config.php");
+} else {
+    echo "You do not have a Config File";
+exit;
+}
+if(!isset($auth) || $auth == ""){
+	echo "You have not set the AUTH correctly";
+	exit;
+}
+
 if (!function_exists('getallheaders')) {
     function getallheaders() {
     $headers = [];
